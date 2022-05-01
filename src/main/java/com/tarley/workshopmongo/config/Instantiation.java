@@ -41,13 +41,13 @@ public class Instantiation implements CommandLineRunner{
 		userRepository.saveAll(Arrays.asList(maria, alex, bob, tarley));
 		
 		Post post1 = new Post(null,sdf.parse("21/03/2018"), "Partiu, viagem!", "Vou viajar para o DF, Abraços!", new AuthorDTO(maria));
-		Post post2 = new Post(null,sdf.parse("23/04/2018"), "Bom dia!", "Acordei com muita preguiça hoje.", new AuthorDTO(maria));
-		Post post3 = new Post(null,sdf.parse("23/04/2018"), "Verdade seja dita!", "Cavalo dado, não se olha os dentes.", new AuthorDTO(tarley));
+		Post post2 = new Post(null,sdf.parse("23/03/2018"), "Bom dia!", "Acordei com muita preguiça hoje.", new AuthorDTO(maria));
+		Post post3 = new Post(null,sdf.parse("23/03/2018"), "Verdade seja dita!", "Cavalo dado, não se olha os dentes.", new AuthorDTO(tarley));
 
 		
 		CommentDTO c1 = new CommentDTO("Boa viagem mano!", sdf.parse("21/03/2018"), new AuthorDTO(tarley));
 		CommentDTO c2 = new CommentDTO("Aproveite!", sdf.parse("22/03/2018"), new AuthorDTO(bob));
-		CommentDTO c3 = new CommentDTO("Tenha um ótimo dia!", sdf.parse("23/03/2018"), new AuthorDTO(alex));
+		CommentDTO c3 = new CommentDTO("Apruma e vai trabalhar!", sdf.parse("23/03/2018"), new AuthorDTO(alex));
 		CommentDTO c4 = new CommentDTO("Para com isso, cara.", sdf.parse("23/03/2018"), new AuthorDTO(maria));
 		CommentDTO c5 = new CommentDTO("Ta chapando, Deolane?.", sdf.parse("25/03/2018"), new AuthorDTO(bob));
 
